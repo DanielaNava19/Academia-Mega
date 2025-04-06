@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patrones de diseño</title>  
+    </head>
+    <body>
+        <h1>Login Ficticio</h1>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Constraseña">
+        <br><br>
+        <button onclick="login()">Iniciar Sesion</button>
+        <button onclick="logout()">Cerrar Sesion</button>
+        <script src="authModule.js"></script>
+        <script src="userSingleton.js"></script>
+        <script>
+        function login(){
+            const user= document.getElementById("username").value;
+            const pass= document.getElementById("password").value;
+            
+            AuthModule.login(user, pass);
+        }
+        function logout(){
+            AuthModule.logout();
+        }
+       </script>
+    </body>
+
+</html>
