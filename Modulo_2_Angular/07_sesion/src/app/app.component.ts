@@ -6,8 +6,8 @@ import { TarjetaComponent } from './Components/tarjeta/tarjeta.component';
 import { CommonModule } from '@angular/common';
 import { TodoComponent } from './Components/todo/todo.component';
 import { ProductManagerComponent } from './Components/product-manager/product-manager.component';
-import { HomeComponent } from './Components/home/home.component';
-import { ErrorComponent } from './Components/error/error.component';
+import { HomeComponent } from './Page/home/home.component';
+import { ErrorComponent } from './Page/error/error.component';
 
 @Component({
   selector: 'app-root',

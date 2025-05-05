@@ -1,0 +1,8 @@
+<h1>Componente padre</h1>
+<p>Aqui vamos a poner el componente hijo</p>
+<div style="display: flex; flex-wrap: wrap; gap: 1rem">
+<app-hijo *ngFor="let usuario of usuarios"
+[Info]="usuario"
+></app-hijo>
+
+</div>
