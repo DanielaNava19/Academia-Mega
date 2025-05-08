@@ -1,0 +1,10 @@
+<h1>Componente padre</h1>
+<p>Aqui vamos a poner el componente hijo</p>
+<p>{{mensajeDelHijo}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 1rem">
+<app-hijo *ngFor="let usuario of usuarios"
+[Info]="usuario"
+(mensaje)="recibirMensaje($event)"
+></app-hijo>
+
+</div>

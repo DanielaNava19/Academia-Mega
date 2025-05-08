@@ -1,0 +1,9 @@
+<div class="card">
+  <img [src]="img" alt="">/<!--Property binding: Traer valors del typescript y asignarlos a una propiedad, con uso de [] en la propiedad -->
+  <div class="card_content">
+    <h3 class=card-title>{{title}}</h3><!--Interpolacion: traer valores del typescript-->
+    <p class="card-description">{{contenido}}</p>
+    <button class="btn" (click)="mostrarAlerta()">{{botonText}}</button> <!-- Event Binding: Traer acciones al evento, con uso de () en el evento-->
+    <input type="text" [(ngModel)]="title" placeholder="Escribe un titulo"><!-- Two-way Binding: Mandar valores del html al ts, los cuales son enviados de nuevo al html, en este ejemplo title al h3-->
+  </div>
+</div>
