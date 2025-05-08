@@ -1,0 +1,8 @@
+<!--Proyecto tarjeta, utilizando los 4 tipos de Data Binding-->
+<div class="card">
+  <h2>{{mensaje}}</h2> <!--Interpolacion-->
+  <img [src]="imagen" alt="Foto de perfil"> <!--Property binding-->
+  <input type="text" [(ngModel)]="nombre" placeholder="Escribe tu nombre"> <!-- Two-way Binding-->
+  <input type="text" [(ngModel)]="imagen" placeholder="URL de tu imagen"> <!-- Two-way Binding-->
+  <button (click)="cambiarSaludo()">Actualizar datos</button> <!-- Event Binding-->
+</div>
